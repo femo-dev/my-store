@@ -1,5 +1,5 @@
-<app-products></app-products>
-
-<!-- <p><input type="text" [(ngModel)]="imgParent" /></p>
+<p><input type="text" [(ngModel)]="imgParent" /></p>
+<!-- <app-img img="Este valor viene desde el padre"></app-img> --> 
 <app-img (loaded)="onLoaded($event)" [img]="imgParent"></app-img>
-<hr /> -->
+
+<app-product [product]="product" *ngFor="let product of products"></app-product>
